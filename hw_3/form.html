@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./form.css" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+  <form action="#" method="get" name="reqister">
+    <label><h3>Full name</h3>
+      <input type="text" name="full_name" placeholder="full_name" required/>
+    </label>
+    <label><h3>Email</h3>
+      <input type="email" name="email" placeholder="email" required/>
+    </label>
+    <label><h3>Password</h3>
+      <input type="password" name="password" placeholder="password" required/>
+    </label>
+    <label><h3>Password</h3>
+      <input type="password" name="repassword" placeholder="password" required/>
+    </label>
+    <div class="radio">
+        <h3>Sex</h3>
+        <div>
+         <label><input name="sex" type="radio">
+            <h3>Man</h3>
+         </label>
+         <label><input name="sex" type="radio" >
+            <h3>Woman</h3>
+         </label>
+        </div>
+    </div>
+    <label><h3>Age</h3>
+        <input type="number" name="age" placeholder="age" min="10" required/>
+      </label>
+      <label><h3>Course</h3>
+        <select name="select">
+          <option>-=Select=-</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+       </label>
+       <label><h3>Full address</h3>
+        <textarea name="full address" placeholder="message"></textarea>
+      </label>
+      <label>
+        <input type="checkbox" name="checkbox">
+          <h3>I agree to the processing of personal data</h3>
+      </label>
+      <div class="btn">
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+      </div>
+   </form>  
+</body>
+</html>
