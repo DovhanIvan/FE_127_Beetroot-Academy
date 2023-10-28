@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Farro&display=swap');
+.container {
+    width: 1200px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    flex-shrink: 0;
+    color: #000000;
+    height: 80px;
+    padding: 13px 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-eng {
+    margin-right: 50px;
+}
+.header-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.header-menu li {
+    margin-right: 10px;
+    color: #000;
+    font-family: Staatliches;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.66px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 50px;
+}
+.container main {
+    width: 1200px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+h1 {
+    position: relative;
+    color: #000;
+    font-family: Francois One;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+}
+.raise {
+    position: relative; 
+    top: -10px;
+    color: #000;
+    font-feature-settings: 'sups' on;
+    font-family: Farro;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+p {
+    color: #000;
+    font-family: PT Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+}
+.bold {
+    font-weight: bold;
+}
+.underline {
+    text-decoration: underline;
+}
+.highlight {
+    background-color: lightgray;
+}
+.highlight::before {
+    content: "<Text>";
+    color: #000; 
+}
+.highlight::after {
+    content: "</Text>"; 
+    color: #000; 
+}
+.italic {
+    font-style: italic;
+}
