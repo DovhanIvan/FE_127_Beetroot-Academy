@@ -172,21 +172,28 @@ main .section-3 .items div .content {
     height: 100%;
     display: flex;
     color: #FFF;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0px 20px 20px 20px;
+    padding: 20px;
     box-sizing: border-box;
     background: linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.45) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
 }
-main .section-3 .items div .content:hover .author,
-main .section-3 .items div .content:hover .date {
+main .section-3 .items div .content .header,
+main .section-3 .items div .content .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+main .section-3 .items div .content:hover .header,
+main .section-3 .items div .content:hover .footer {
     opacity: 1;
 }
 main .section-3 .items div .content:hover {
     background: unset;
 }
-main .section-3 .items div .content .author,
-main .section-3 .items div .content .date {
+main .section-3 .items div .content .header,
+main .section-3 .items div .content .footer {
     transition: .4s ease-out all;
     opacity: 0;
 }
