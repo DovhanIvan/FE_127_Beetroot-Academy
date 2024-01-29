@@ -1,25 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&display=swap"); */
-/* Montserrat */
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-}
-
-/* OpenSans */
-@font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&display=swap");
 .container {
   width: 100%;
   max-width: 1170px;
@@ -68,29 +47,26 @@ header.header__sticky {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: #55B7FF;
+  background-color: #2C4058;
   z-index: 100;
   margin: 0 auto;
 }
 header nav ul {
   display: flex;
-  justify-content: space-around;
-  color: #FFF;
-  font-family: Source Sans Pro;
-  font-size: 14px;
 }
-header nav ul.header-nav {
+header nav ul.header_nav {
   justify-content: space-between;
-  
 }
-header nav ul.header-nav li a {
+header nav ul.header_nav li a {
   text-transform: uppercase;
+  text-decoration: none;
+  color: #FFF;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
 }
-header nav ul.header-nav li a::before {
+header nav ul.header_nav li a::before {
   content: "";
   border: 1px solid #FFF;
   display: block;
@@ -98,25 +74,25 @@ header nav ul.header-nav li a::before {
   height: 10px;
   border-radius: 50%;
 }
-header nav ul.header-nav li a.active:before {
+header nav ul.header_nav li a.active:before {
   background-color: #FFF;
 }
-header nav ul.header-icons {
+header nav ul.header_icons {
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
-header nav ul.header-icons li {
+header nav ul.header_icons li {
   border: 1px solid #FFF;
   border-radius: 50%;
 }
-header nav ul.header-icons li:nth-child(1) {
+header nav ul.header_icons li:nth-child(1) {
   padding: 11px 15px;
 }
-header nav ul.header-icons li:nth-child(2) {
+header nav ul.header_icons li:nth-child(2) {
   padding: 11px 12px;
 }
-header nav ul.header-icons li:nth-child(3) {
+header nav ul.header_icons li:nth-child(3) {
   padding: 11px 13px;
 }
 
@@ -198,8 +174,8 @@ main section.we_do .text_paragraph hr {
 }
 main section.we_do div.we_do-info {
   display: flex;
-  /* flex-direction: column;
-  align-items: center; */
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   margin-top: 200px;
 }
@@ -217,14 +193,14 @@ main section.we_do div.we_do-info .we_do-info-content .sizing {
 }
 main section.we_do div.we_do-info .we_do-info-content .text_position {
   display: flex;
-  /* flex-direction: column;
-  justify-content: center; */
+  flex-direction: column;
+  justify-content: center;
   gap: 20px;
 }
 main section.we_do div.we_do-info .we_do-info-content .text_position .more {
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: center;
   max-width: 125px;
   width: 100%;
   max-height: 20px;
@@ -233,10 +209,12 @@ main section.we_do div.we_do-info .we_do-info-content .text_position .more {
   border: 1px solid black;
 }
 main section.we_do div.we_do-info .we_do-info-content .text_position .more:hover {
-  border: 1px solid red;
+  border: 1px solid #2C4058;
+  background-color: #2C4058;
+  color: #FFF;
 }
 main section.we_do div.we_do-info .we_do-info-content .text_position .location::before {
-  content: url(../img/pin_marker.svg);
+  content: url(../img/point.svg);
   margin-right: 10px;
 }
 main section.we_do div.we_do-info .we_do-info-content .img_position_blue {
@@ -261,7 +239,6 @@ main section.we_do div.we_do-info .section_building {
 }
 main section.news {
   background: url(../img/bg-news.svg);
-  
 }
 main section.news .text_news {
   display: flex;
@@ -269,7 +246,6 @@ main section.news .text_news {
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  text-transform: uppercase;
   gap: 30px;
 }
 main section.news .text_news hr {
@@ -355,6 +331,12 @@ section.gallery .text_gallery {
   align-items: center;
   gap: 30px;
   margin-bottom: 50px;
+}
+section.gallery .text_gallery hr {
+  width: 100px;
+}
+section.gallery .text_gallery h1 {
+  color: #2C4058;
   text-transform: uppercase;
   color: #2C4058;
   text-align: center;
@@ -362,11 +344,9 @@ section.gallery .text_gallery {
   font-size: 44px;
   font-style: normal;
   font-weight: 700;
+  line-height: normal;
 }
-section.gallery .text_gallery hr {
-  width: 100px;
-}
-/* section.gallery .text_gallery p {
+section.gallery .text_gallery p {
   color: #2C4058;
   text-align: center;
   font-family: Montserrat;
@@ -374,7 +354,7 @@ section.gallery .text_gallery hr {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-} */
+}
 section.gallery .items {
   position: relative;
   display: grid;
@@ -445,7 +425,7 @@ div.items:hover div.item {
   justify-content: space-between;
 }
 
-.contsacts-info-child {
+.contacts-info-child {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -458,7 +438,7 @@ footer {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background:url(../img/bg-footer.svg);
+  background: url(../img/bg-footer.svg);
   position: relative;
 }
 footer .manager_contacts {
@@ -469,6 +449,7 @@ footer .manager_contacts {
   justify-content: space-between;
 }
 footer .manager_contacts p {
+  color: #FFF;
   justify-content: space-around;
 }
 footer .contacts_position {
@@ -509,7 +490,7 @@ footer .button_form {
 footer .button_form .contacts-form-button {
   padding: 11px 34px 12px 34px;
   border: unset;
-  border: 1px solid red;
+  border: 1px solid #2C4058;
 }
 footer p {
   display: flex;
@@ -529,6 +510,15 @@ footer .footer_links .footer_logo {
   display: flex;
   flex-direction: column;
   gap: 41px;
+}
+footer .footer_links p {
+  color: #FFF;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 footer ul {
   display: flex;
@@ -859,3 +849,5 @@ footer .contacts-form-button {
     align-items: center;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

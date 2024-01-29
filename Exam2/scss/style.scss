@@ -46,6 +46,7 @@
       background-color: #2C4058;
       z-index: 100;
       margin: 0 auto;
+
     }
     nav {
       ul{
@@ -53,11 +54,13 @@
       }
     }
     nav {
-      ul.header-nav {
+      ul.header_nav {
         justify-content: space-between;
         li {
           a {
             text-transform: uppercase;
+            text-decoration: none;
+            color: #FFF;
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -78,7 +81,7 @@
       }
     }
     nav {
-      ul.header-icons {
+      ul.header_icons {
         align-items: center;
         justify-content: center;
         gap: 20px;
@@ -174,8 +177,7 @@
         align-items: center;
         margin-top: 100px;
         gap: 30px;
-        
-        hr {
+           hr {
           width: 100px;
         }
       }
@@ -212,12 +214,14 @@
               padding: 16px 41px;
               border: 1px solid black;
               &:hover {
-                border: 1px solid red;
+                border: 1px solid #2C4058;;
+                background-color: #2C4058;
+                color: #FFF;
               }
             }
             .location {
               &::before {
-                content: url(img/pin_marker.svg);
+                content: url(../img/point.svg);
                 margin-right: 10px;
               }
             }
@@ -344,6 +348,17 @@
       hr {
         width: 100px;
       }
+      h1 {
+        color: #2C4058;
+        text-transform: uppercase;
+        color: #2C4058;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
       p {
         color: #2C4058;
         text-align: center;
@@ -425,7 +440,7 @@
     display: flex;
     justify-content: space-between;
   }
-  .contsacts-info-child {
+  .contacts-info-child {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -446,6 +461,7 @@
       height: 100%;
       justify-content: space-between;
       p {
+        color: #FFF;
         justify-content: space-around;
       }
     }
@@ -486,7 +502,7 @@
       .contacts-form-button {
         padding: 11px 34px 12px 34px;
         border: unset;
-        border: 1px solid red;
+        border: 1px solid #2C4058;
       }
     }
     p {
@@ -506,6 +522,15 @@
         display: flex;
         flex-direction: column;
         gap: 41px;
+      }
+      p {
+        color: #FFF;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
       }
     }
     ul {
